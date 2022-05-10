@@ -1,270 +1,267 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-.head-img {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  /* opacity: 0.1; */
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <title>Travel-Website</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="head-img"></div>
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    url(images/background.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.header {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  opacity: 0.9;
+      <div class="container">
+        <img src="images/airp.ico" alt="" />
+        <button class="login-btn" type="button">Login</button>
+      </div>
+      <h1>Training And Eathing Healthy</h1>
+      <p>Subscribe Training and Eathing Healthy YouTube Channel</p>
 
-  text-align: center;
-  color: #fff;
-}
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" />
+        <div class="input-group-append">
+          <button type="submit" class="input-group-text btn">Search</button>
+        </div>
+      </div>
+    </section>
 
-.header img {
-  width: 70px;
-  float: left;
-  position: relative;
-  padding-top: 20px;
-}
-.login-btn {
-  width: 100px;
-  margin-top: 20px;
-  position: relative;
-  padding: 8px 0;
-  outline: none !important;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  background: transparent;
-  color: #fff;
-  float: right;
-}
-.header h1 {
-  padding-top: 220px;
-  position: relative;
-  padding-bottom: 0;
-  font-size: 55px;
-}
-.header p {
-  margin: 18px 0;
-  position: relative;
-}
-.input-group {
-  width: 90% !important;
-  max-width: 500px;
-  margin: auto;
-  background: #fff;
-  border-radius: 30px;
-  padding: 2px;
-}
-.form-control {
-  border: 0 !important;
-  border-radius: 30px !important;
-  margin: 2px;
-  box-shadow: none !important;
-}
-.input-group-text {
-  width: 100px;
-  border: 0 !important;
-  background-image: linear-gradient(#00ff7e, #1f3d90);
-  color: #fff !important;
-  padding: 0 25px !important;
-  border-radius: 30px !important;
-  box-shadow: none !important;
-}
+    <section class="features">
+      <h1>Featured Destinations</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="feature-box">
+              <div class="feature-img">
+                <img src="images/yoga-class.jpg" alt="" />
+                <div class="price">
+                  <p>84$</p>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
 
-/* Features */
+              <div class="feature-details">
+                <h4>Yoga Class</h4>
+                <p>
+                  Subscribe Training and Eathing Healthy YouTube Channel. Lorem
+                  ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                  possimus aut ipsam soluta earum delectus corrupti sapiente
+                  aliquam libero consectetur!
+                </p>
+                <div>
+                  <span><i class="fas fa-map-marker">Bulgaria</i></span>
+                  <span><i class="fas fa-calendar-alt">Month Price</i></span>
+                  <span><i class="fas fa-sun">3 Days a week</i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-box">
+              <div class="feature-img">
+                <img src="images/eath.jpg" alt="" />
+                <div class="price">
+                  <p>50$</p>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
 
-.features {
-  padding: 100px 0;
-}
-h1 {
-  text-align: center;
-  padding-bottom: 30px;
-}
-.feature-img img {
-  width: 100%;
-}
-.price {
-  width: 50px;
-  height: 50px;
-  background: #57e2b4;
-  columns: #fff;
-  font-weight: 600;
-  border-radius: 50%;
-  padding: 10px;
-  box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
-  position: absolute;
-  left: 20px;
-  bottom: -25px;
-}
-.feature-img {
-  position: relative;
-}
-.rating {
-  padding: 3px;
-  float: right;
-  background: #fff;
-  bottom: -1px;
-  right: 0;
-  position: absolute;
-}
-.features .fas {
-  font-size: 15px;
-  color: #57e2b4;
-}
-.feature-details {
-  padding: 20px;
-  text-align: center;
-}
-.feature-details h4 {
-  font-weight: 600;
-  margin-top: 20px;
-}
-.feature-details .fas {
-  margin-right: 5px;
-}
-.feature-box {
-  box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
-  margin: bottom;
-}
+              <div class="feature-details">
+                <h4>Healthy Eathing</h4>
+                <p>
+                  Subscribe Training and Eathing Healthy YouTube Channel. Lorem
+                  ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                  possimus aut ipsam soluta earum delectus corrupti sapiente
+                  aliquam libero consectetur!
+                </p>
+                <div>
+                  <span><i class="fas fa-map-marker">Bulgaria</i></span>
+                  <span><i class="fas fa-calendar-alt">Month Price</i></span>
+                  <span><i class="fas fa-sun">3 Days a week</i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-box">
+              <div class="feature-img">
+                <img src="images/woman.jpg" alt="" />
+                <div class="price">
+                  <p>74$</p>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
 
-.gallery {
-  background: #efefef;
-  padding: 100px 0;
-}
-.gallery-box img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
-  cursor: pointer;
-  transition: 1s;
-}
-.gallery-box img:hover {
-  transform: scale(1.1);
-}
-.gallery-box h4 {
-  display: block;
-  color: #fff;
-  text-shadow: -2px 2px 2px #000;
-  font-weight: 600;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.gallery-box {
-  position: relative;
-  margin-bottom: 30px;
-}
-.col-md-3 {
-  margin: auto;
-}
+              <div class="feature-details">
+                <h4>Home Training</h4>
+                <p>
+                  Subscribe Training and Eathing Healthy YouTube Channel. Lorem
+                  ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                  possimus aut ipsam soluta earum delectus corrupti sapiente
+                  aliquam libero consectetur!
+                </p>
+                <div>
+                  <span><i class="fas fa-map-marker">Bulgaria</i></span>
+                  <span><i class="fas fa-calendar-alt">Month Price</i></span>
+                  <span><i class="fas fa-sun">3 Days a week</i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.banner {
-  height: 100vh;
-  width: 100%;
-  background-image: url(images/group.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  padding-top: 14%;
-}
-.banner-highlights {
-  padding: 70px 0;
-  background: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  color: #fff;
-}
+    <section class="gallery">
+      <h1>Example Gallery</h1>
+      <div class="container">
+        <div class="row between">
+          <div class="col-md-3">
+            <div class="gallery-box">
+              <img src="images/yoga.jpg" alt="" />
+              <h4>Yoga At Home</h4>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="gallery-box">
+              <img src="images/woman-coock.jpg" alt="" />
+              <h4>Coocking At Home</h4>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="gallery-box">
+              <img src="images/train-home.jpg" alt="" />
+              <h4>Training At Home</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.booking-btn {
-  width: 120px;
-  padding: 10px 0;
-  outline: none !important;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  background: transparent;
-  color: #fff;
-  margin-top: 20px;
-}
-.users-feedback {
-  padding: 100px 0;
-}
-.user-review {
-  text-align: center;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 100, 0.2);
-  padding-bottom: 50px;
-}
-.user-review p {
-  padding: 50px 10px 10px 10px;
-}
-.users-feedback img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  position: relative;
-  margin: -30px 0 20px 40%;
-}
+    <section class="banner">
+      <div class="banner-highlights">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <h2>Get 10% Off Card</h2>
+              <p>
+                By geting a year-round subscription you drop by 10% of the price
+              </p>
+            </div>
+            <div class="col-md-4">
+              <button type="button" class="booking-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.user-review p::before {
-  content: '\201d';
-  display: block;
-  position: absolute;
-  font-size: 100px;
-  color: #00ff7e;
-  font-family: sans-serif;
-  left: 44%;
-  top: -20px;
-}
+    <section class="users-feedback">
+      <h1>Users Review</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="user-review">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                possimus quae illo optio facilis aperiam consequatur explicabo
+                porro, iusto voluptatem nisi error maiores dolores quasi,
+                consectetur recusandae eveniet earum fugiat?
+              </p>
+              <h5>Kristina Kamenova</h5>
+              <small>Yoga Instructor</small>
+            </div>
+            <img src="images/user1.jpg" alt="" />
+          </div>
+          <div class="col-md-4">
+            <div class="user-review">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                possimus quae illo optio facilis aperiam consequatur explicabo
+                porro, iusto voluptatem nisi error maiores dolores quasi,
+                consectetur recusandae eveniet earum fugiat?
+              </p>
+              <h5>Kunka Georgieva</h5>
+              <small>Cooking Instructor</small>
+            </div>
+            <img src="images/mom.jpg" alt="" />
+          </div>
+          <div class="col-md-4">
+            <div class="user-review">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                possimus quae illo optio facilis aperiam consequatur explicabo
+                porro, iusto voluptatem nisi error maiores dolores quasi,
+                consectetur recusandae eveniet earum fugiat?
+              </p>
+              <h5>Aleksandar Georgiev</h5>
+              <small>Home Training Instructor</small>
+            </div>
+            <img src="images/user.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-.footer {
-  text-align: center;
-  padding: 50px 20px 15px;
-  background-image: linear-gradient(#39e071, #b5df89);
-  color: rgb(255, 255, 255);
-}
-.footer-logo {
-  width: 90px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.footer h4 {
-  text-align: left;
-  margin-top: 15px;
-  margin-bottom: 25px;
-}
-.footer p {
-  font-size: 12px;
-  text-align: justify;
-  padding-right: 35px;
-}
-.footer .row .fab,
-.fas {
-  padding-right: 20px;
-  font-size: 15px;
-}
-
-.footer hr {
-  margin-top: 10px;
-  background: #75d658;
-}
-.fa-heart {
-  margin: 0 5px;
-  color: #f44336;
-}
-.footer .copyright {
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .header {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-      url(images/background1.jpg);
-  }
-}
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="images/airp.ico" class="footer-logo" alt="" />
+            <p>
+              Subscribe Training and Eathing Healthy YouTube Channel. Lorem
+              ipsum dolor sit amet consectetur, adipisicing elit. Iste possimus
+              aut ipsam soluta earum delectus corrupti sapiente aliquam libero
+              consectetur!
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h4>Features</h4>
+            <p>Deals & Offers</p>
+            <p>Customer Reviews</p>
+            <p>Cancelatio Policies</p>
+          </div>
+          <div class="col-md-3">
+            <h4>Quick Contact</h4>
+            <p><i class="fas fa-phone-square"></i>+359 898 989 897</p>
+            <p><i class="fas fa-at"></i>hello@example.com</p>
+            <p><i class="fas fa-home"></i>City: Plovdiv ul.Something</p>
+          </div>
+          <div class="col-md-3">
+            <h4>Follow Us On</h4>
+            <p><i class="fab fa-facebook-square"></i>Facebook</p>
+            <p><i class="fab fa-youtube"></i>YouTube</p>
+            <p><i class="fab fa-twitter-square"></i>Twitter</p>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">
+          Made With <i class="fas fa-heart"> By Aleksandar Georgiev</i>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
