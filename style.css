@@ -244,5 +244,14 @@ h1 {
     text-align: center;
 }
 
+@media (min-width: 768px) {
+  .header {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+      url(images/background1.jpg);
+  }
+}
+
 
 
